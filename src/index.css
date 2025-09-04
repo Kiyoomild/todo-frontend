@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #dadada;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  position: fixed;        
+  top: 0;                 
+  left: 50%;              
+  transform: translateX(-50%);
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 20px 0;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 100px 16px 16px;
+}
+
+.box {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  min-height: 150px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.text-box{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: oklch(43.126% 0.22976 266.361);
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.add-btn{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #4b43e8;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.add-btn:hover {
+  background-color: oklch(43.126% 0.22976 266.361);
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.delete-btn {
+  background-color: #f87171;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#todo-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+#todo-list input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
