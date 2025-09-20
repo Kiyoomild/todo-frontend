@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F1E5D1;
+}
+
+h1 {
+  text-align: center;
+  color: #F1E5D1;
+  position: fixed;        
+  top: 0;                 
+  left: 50%;              
+  transform: translateX(-50%);
+  width: 100%;
+  background: #825151;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 130px 20px 20px;
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.text-box{
+  width: 360px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 14px 40px;
+  background: #DBB4B5;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+.add-btn{
+  border: none;
+  outline: none;
+  padding: 14px 40px;
+  background: #DBB4B5;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 1px solid #000;
+}
+
+.add-btn:hover {
+  background-color: #C59799;
+}
+
+.box {
+  width: 100%;
+  max-width: 500px;
+  background: #C59799;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  height: auto;
+  overflow-y: visible;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.delete-btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 40px;
+  padding: 4px 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-size: 1.3rem;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  padding: 2px 0;
+  
+}
+
+#todo-list li.completed span {
+  text-decoration: line-through;
+  color: #000;
+}
+
+#todo-list input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+/*
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+*/
